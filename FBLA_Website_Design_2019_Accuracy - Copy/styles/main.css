@@ -1,0 +1,357 @@
+body{
+    /*background: #2e4053;*/
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#parallax-container {
+    display: block;
+    height: 1000px;
+}
+ 
+#parallax-container div {
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    filter: blur(8px);
+}
+ 
+
+  /***********************/
+ /******Top Nav Bar******/
+/***********************/
+#IAmAMistake{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0px;
+    z-index: 200;
+}
+
+/*MobileContent*/
+#mobileNavDrop{
+    display: none;
+    position: fixed;
+    top: 50px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    z-index: 10000;
+    border: solid #000;
+    border-width: 0 0 2px;
+}
+.mobileNavCont{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+}
+.mobileNavCont a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center; 
+    float: center;
+    line-height: 50px;
+}
+#mobileNav{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+#navBurger{
+    width: 50px;
+}
+/****************/
+
+/*top left*/
+#logo{
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+    margin: 0px;
+    z-index: 0;
+}
+#fillerTop{
+    width: 1920px;
+    display:flex;
+}
+#name{
+    text-transform: uppercase;
+    text-align: left;
+    width: 150px;
+    padding: 7px 0 0 7px;
+    color: #000 ;
+}
+/***********/
+
+.navcontainer{
+    display: block;
+    float: right;
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.navcontainer:hover{
+    background-color: rgba(255, 255, 255, .3);
+    border: solid #fff;
+    border-width: 1px 0 0 0;
+    height: 49px;
+    line-height: 49px;
+}
+
+#home{
+    background-color: rgba(255, 255, 255, .3);
+    border: solid #fff;
+    border-width: 1px 0 0 0;
+}
+
+.navlink{
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    word-wrap: none;
+    line-height: 50px;
+    padding: 0 5px 0 5px;
+}
+  /***********************/
+ /******Top Nav Bar******/
+/***********************/
+
+@media only screen and (max-width: 1552px){
+    #photoContainer, #missionPhoto{
+        width: 100%;
+    }
+    #mission{
+        width: 100%
+    }
+}
+
+
+@media only screen and (max-width: 935px){
+    .navcontainer{
+        display: none;
+    }
+    .photoContainer, .infoPhoto{
+        display: none;
+    }
+    #mission, #chooseus{
+        text-align: center;
+    }
+    #mobileNav{
+        display: block;
+    }
+    #IAmAMistake{
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (min-width: 936px){
+    #mobileNavDrop{
+        display: none !important;
+    }
+}
+
+
+#largeLogoCont{
+    min-width: 200px;
+    position: absolute;
+    margin:0 20%;
+    top: 200px;
+    width: 60%;
+    height: 300px;
+    text-align: center;
+    display: block;
+    z-index: 100;
+}
+#largeLogo{
+    width: inherit;
+    height: auto;
+}
+
+.mainBody{
+    margin: 0 0 300px;
+    color: black;
+    font-size: 26px;
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    min-height: 100px;
+    height: auto;
+    max-height: 2000px;
+}
+
+.infoBar{
+    display: flex;
+    flex-direction: row;
+    margin: 0 15%;
+    min-width: 350px;
+    min-height: 400px;
+}
+
+#aboutMore{
+    margin: 0 0 300;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+#aboutMoreButton{
+    text-align: center;
+    display: block;
+    float: middle;
+    height: 46px;
+    width: 150px;
+    line-height: 50px;
+    margin: 0 auto;
+    border: solid #00aeef;
+    border-width: 2px;
+}
+
+#mission{
+    margin: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 25px;
+    min-width: 260px;
+    height: auto;
+    min-height: 330px;
+    width: 50%;
+}
+
+.infoHeader{
+    display: block;
+    height: auto;
+    font-size: 30px;
+}
+
+.info{
+    height: auto;
+    padding: 5px 5px;
+    max-height: 500px;
+    max-width: 475px;
+    margin: 10px;
+    border: solid #00aeef;
+    border-radius: 15px;
+    border-width: 0 0 0 2px;
+}
+
+.photoContainer{
+    max-height: 400px;
+    max-width: 50%;
+    float: right;
+
+}
+
+.infoPhoto{
+    display: flex;
+    max-height: 375px;
+    max-width: 100%;
+    width: auto;
+    margin: 10px;
+}
+
+#chooseus{
+    float: right;
+    margin: 20px;
+    padding: 10px;
+}
+
+#img2{
+    margin-right: 15%;
+}
+
+
+
+
+#previewPackages{
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    float: middle;
+    min-height: 600px;
+    
+}
+
+#serviceInfo{
+    margin: 0 15%;
+}
+h2{
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+}
+ul li{
+    text-align: left;
+}
+.package{
+    display: inline-block;
+    float: center;
+    vertical-align: top;
+    min-height: 310px;
+    margin: 10px 2%;
+    border: solid #00aeef;
+    min-width: 375px;
+    min-height: 385px;
+}
+
+#more{
+    min-height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+#moreButton{
+    text-align: center;
+    display: block;
+    float: middle;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    margin: 0 auto;
+    border: solid #00aeef;
+    border-width: 2px;
+}
+
+/*footer*/
+.footer{
+    min-height: 400px;
+    background-color: #fff;
+    overflow: auto;
+}
+#footCont{
+    width: 75%;
+    margin: 0 12.5%;
+}
+#assurance{
+    display: block;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0;
+    vertical-align: top;
+}
+.footThing{
+    float: left;
+
+}
+a, ul{
+    text-decoration: none !important;
+    list-style-type: none;
+}
+#siteMap{
+    width: 50%;
+}
+#legal{
+    width: 50%;
+}

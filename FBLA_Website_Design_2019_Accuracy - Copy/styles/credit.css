@@ -1,0 +1,202 @@
+body{
+    /*background: #2e4053;*/
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#parallax-container {
+    display: block;
+    height: 700px;
+}
+ 
+#parallax-container div {
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    filter: blur(8px);
+}
+ 
+
+  /***********************/
+ /******Top Nav Bar******/
+/***********************/
+#IAmAMistake{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0px;
+    z-index: 200;
+}
+
+/*MobileContent*/
+#mobileNavDrop{
+    display: none;
+    position: fixed;
+    top: 50px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    z-index: 10000;
+    border: solid #000;
+    border-width: 0 0 2px;
+}
+.mobileNavCont{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+}
+.mobileNavCont a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center; 
+    float: center;
+    line-height: 50px;
+}
+#mobileNav{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+#navBurger{
+    width: 50px;
+}
+/****************/
+
+/*top left*/
+#logo{
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+    margin: 0px;
+    z-index: 0;
+}
+#fillerTop{
+    width: 1920px;
+    display:flex;
+}
+#name{
+    text-transform: uppercase;
+    text-align: left;
+    width: 150px;
+    padding: 7px 0 0 7px;
+    color: #000 ;
+}
+/***********/
+
+.navcontainer{
+    display: block;
+    float: right;
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.navcontainer:hover{
+    background-color: rgba(255, 255, 255, .3);
+    border: solid #fff;
+    border-width: 1px 0 0 0;
+    height: 49px;
+    line-height: 49px;
+}
+
+#contact{
+    background-color: rgba(255, 255, 255, .3);
+    border: solid #fff;
+    border-width: 1px 0 0 0;
+}
+
+.navlink{
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    word-wrap: none;
+    line-height: 50px;
+    padding: 0 5px 0 5px;
+}
+  /***********************/
+ /******Top Nav Bar******/
+/***********************/
+
+@media only screen and (max-width: 935px){
+    .navcontainer{
+        display: none;
+    }
+    .photoContainer, .infoPhoto{
+        display: none;
+    }
+    #mission, #chooseus{
+        text-align: center;
+    }
+    #mobileNav{
+        display: block;
+    }
+    #IAmAMistake{
+        background: #fff;
+    }
+}
+
+@media only screen and (min-width: 936px){
+    #mobileNavDrop{
+        display: none !important;
+    }
+}
+
+#creditLinks{
+    margin: 0 20%;
+    text-align: left;
+    list-style-type: none;
+
+}
+ul li a{
+    text-decoration: none;
+}
+
+.mainBody{
+    margin: 0 0 300px;
+    color: black;
+    font-size: 26px;
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    min-height: 100px;
+    height: auto;
+    max-height: 2000px;
+    text-align: center;
+}
+
+#pageName{
+    position: absolute;
+    top: 250px;
+    float: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+#pageNameText{
+    font-size: 75px;
+}
+
+.pageBasicHead{
+    float: center;
+    text-align: center;
+    padding: 21px 0;
+    margin: 0 auto;
+    font-size: 45px;
+    width: 50%;
+    border: solid #00aeef;
+    border-width: 0 0 2px;
+}
