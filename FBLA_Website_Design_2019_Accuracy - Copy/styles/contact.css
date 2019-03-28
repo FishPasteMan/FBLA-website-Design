@@ -256,4 +256,6 @@ a, ul{
     text-decoration: none !important;
     list-style-type: none;
 }
-
+ul li{
+    text-align: left;
+}
