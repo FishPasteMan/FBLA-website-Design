@@ -331,8 +331,8 @@ ul li{
     overflow: auto;
 }
 #footCont{
-    width: 75%;
-    margin: 0 12.5%;
+    width: 50%;
+    margin: 0 25%;
 }
 #assurance{
     display: block;
@@ -340,18 +340,19 @@ ul li{
     padding: 5px;
     margin: 0;
     vertical-align: top;
+    text-align: center;
 }
 .footThing{
-    float: left;
-
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+    max-width: 500px;
+    margin: 0;
+    border: solid 1px #000;
+    vertical-align: top;
+    min-height: 185px;
 }
 a, ul{
     text-decoration: none !important;
     list-style-type: none;
-}
-#siteMap{
-    width: 50%;
-}
-#legal{
-    width: 50%;
 }
